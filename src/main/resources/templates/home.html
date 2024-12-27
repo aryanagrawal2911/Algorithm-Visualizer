@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(45deg, #0093E9 0%, #80D0C7 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-btn {
+            padding: 2rem;
+            transition: all 0.3s ease;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .main-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .pathfinding-btn {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+        }
+
+        .sorting-btn {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .btn-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-title {
+            color: white;
+            font-weight: 700;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-wrapper {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .subtitle {
+            color: white;
+            opacity: 0.9;
+        }
+
+        .btn-description {
+            opacity: 0.9;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <h1 class="page-title mb-3">Algorithm Visualizer</h1>
+                <p class="subtitle">Choose an algorithm to visualize</p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="row justify-content-center g-4">
+                <div class="col-md-6">
+                    <a href="/path" class="text-decoration-none" >
+                        <button class="main-btn pathfinding-btn">
+                            <div class="btn-title">Path Finding</div>
+                            <p class="btn-description">Explore maze-solving algorithms</p>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="/sorting" class="text-decoration-none">
+                        <button class="main-btn sorting-btn">
+                            <div class="btn-title">Sorting</div>
+                            <p class="btn-description">Discover sorting algorithms</p>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

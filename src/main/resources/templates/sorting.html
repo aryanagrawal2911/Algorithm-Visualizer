@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sorting Algorithm Visualization</title>
+    <style>
+        /* Center the container */
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Controls styling */
+        .controls {
+            margin: 20px;
+        }
+
+        /* Each bar style */
+        .bar {
+            display: inline-block;
+            width: 15px; /* Bar width */
+            margin: 1px;
+            background-color: #3498db; /* Bar color */
+        }
+
+        /* Center the canvas */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #333;
+            flex-direction: column;
+        }
+
+        /* Button styling */
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Header styling */
+        h1 {
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+        
+    </style>
+</head>
+<body>  
+    
+    <div>
+        <button id="bubbleSortButton">Bubble Sort</button>
+        <button id="insertionSortButton">Insertion Sort</button>
+        <button id="mergeSortButton">Merge Sort</button>
+    </div>
+
+    <!-- <canvas id="sortingCanvas" width="500" height="400"></canvas> -->
+    <div id="barsContainer" class="container"></div>
+
+    <script src="sortingScript.js"></script>
+</body>
+</html>
