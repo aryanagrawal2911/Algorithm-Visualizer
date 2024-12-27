@@ -20,28 +20,32 @@
                 <label hx-get="/path-find?name=DIJKSTRA"
                        hx-target="#swap-container"
                        hx-swap="outerHTML"
-                       for="dijkstra" class="mb-0">Dijkstra</label>
+                       for="dijkstra" class="mb-0"><abbr title="Dijkstra's algorithm finds the shortest path in a grid by exploring neighboring nodes, updating distances, and choosing the node with the smallest distance until the destination is reached.">
+                        Dijkstra</abbr></label>
 
                 <input type="radio" name="radio-btn" id="a_star"/>
                 <label hx-get="/path-find?name=A_STAR"
                        hx-target="#swap-container"
                        hx-swap="outerHTML"
                        for="a_star"
-                       class="mb-0">A*</label>
+                       class="mb-0"><abbr title="The A* algorithm finds the shortest path in a grid by using a heuristic to estimate the cost from the current point to the goal, combining path cost and heuristic values.">
+                        A*</abbr></label>
 
                 <input type="radio" name="radio-btn" id="bfs"/>
                 <label hx-get="/path-find?name=BFS"
                        hx-target="#swap-container"
                        hx-swap="outerHTML"
                        for="bfs"
-                       class="mb-0">BFS</label>
+                       class="mb-0"><abbr title="BFS(Breadth-First Search) algorithm explores a grid layer by layer, starting from the source. It checks neighboring cells, ensuring the shortest path is found by visiting each cell once.">
+                       BFS</abbr></label>
 
                 <input type="radio" name="radio-btn" id="dfs"/>
                 <label hx-get="/path-find?name=DFS"
                        hx-target="#swap-container"
                        hx-swap="outerHTML"
                        for="dfs"
-                       class="mb-0">DFS</label>
+                       class="mb-0"><abbr title="DFS(Depth-First Search) algorithm explores a grid by moving through adjacent cells, marking visited ones. It backtracks when encountering obstacles or dead-ends, searching for a path from start to goal.">
+                        DFS</abbr></label>
             </ul>
         </header>
     </div>
